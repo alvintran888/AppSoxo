@@ -1,0 +1,880 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009C45C2BBBE4005909ECE37 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1ACBACB2A89B4F649FD493BA /* Roboto-Italic.ttf */; };
+		00E356F31AD99517003FC87E /* TDAppCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TDAppCoreTests.m */; };
+		094ECFDC09FB497FBB4E3CD7 /* BeVietnam-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5899CB5E284A43D085A5EFE0 /* BeVietnam-SemiBold.ttf */; };
+		0B71E26A363C4B50BD3D433D /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D4BDAE203294DB08B2EF100 /* Roboto-LightItalic.ttf */; };
+		0C60C43DCBCB4C64AB6978A9 /* BeVietnam-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1095A44CE4A046D99F6314AE /* BeVietnam-ExtraBold.ttf */; };
+		0C80B921A6F3F58F76C31292 /* libPods-TDAppCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-TDAppCore.a */; };
+		0F39A27DDB754C519AA2DB4A /* BeVietnam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57BA5BE868964E4A9F3870E0 /* BeVietnam-Regular.ttf */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		16E9CAC2B4E34FD5A8291491 /* BeVietnam-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9AA082770A64E39913B7372 /* BeVietnam-Italic.ttf */; };
+		20FC5D0F62C846B4A8CB1295 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70E10E1228A84874B3CA43CD /* Roboto-Light.ttf */; };
+		311B4793B02148E68F86B9ED /* BeVietnam-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AADE378B5A794B2BB7A9DBA9 /* BeVietnam-Light.ttf */; };
+		32ED8DD573844E28AA814A7B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 272051E12BDB46C8A7CEEB44 /* Roboto-Black.ttf */; };
+		3877491856C3460DA01305FC /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D4D58A36604543AB7F78CA /* Roboto-Medium.ttf */; };
+		3C0CE49784D046A89E983E48 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C90A32F8D9A94B64A656B4AD /* Roboto-Bold.ttf */; };
+		437E21FFFA8B44389C0A93DF /* BeVietnam-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEC093712D93430C8ED89811 /* BeVietnam-SemiBoldItalic.ttf */; };
+		486BD32E78454061ACCA91A4 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6C8BEC091FC4DA0ACE3C3C0 /* Roboto-BlackItalic.ttf */; };
+		5F8A2EA0873C4AE486EE296A /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04496A73AFE44424B3C525B8 /* Roboto-BoldItalic.ttf */; };
+		66265519E4DC4B5AA762C429 /* BeVietnam-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 277BA45C54314D55BA006E07 /* BeVietnam-MediumItalic.ttf */; };
+		6768817028F273C100D6BB54 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 6768816F28F273C100D6BB54 /* www */; };
+		676D128528F11C84000147B5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D128428F11C84000147B5 /* File.swift */; };
+		6FC3D5424E1E41FF926E3C66 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 020EE49708BC471BADAB8475 /* Roboto-Thin.ttf */; };
+		74561BE56F2A46B29655C834 /* BeVietnam-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC83E685A65040B3B9151FA2 /* BeVietnam-BoldItalic.ttf */; };
+		7699B88040F8A987B510C191 /* libPods-TDAppCore-TDAppCoreTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-TDAppCore-TDAppCoreTests.a */; };
+		79AE6B51441C4BDC8A212319 /* BeVietnam-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DDCDECB7503486D8E08A290 /* BeVietnam-ExtraBoldItalic.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A3BCBDEF078D44639AE4DF2F /* BeVietnam-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EA07D68C9A443149ECDE0E9 /* BeVietnam-LightItalic.ttf */; };
+		A6C43A32B3104ECBB0F1D70C /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A02EEF9D261E43BDBC3164C9 /* Roboto-ThinItalic.ttf */; };
+		BB784A986B444EE18FD0BD64 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA4F20653B324256921DE55C /* Roboto-Regular.ttf */; };
+		BF2365045C7D40EA844173AD /* BeVietnam-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55F8F8F011594F54969D2F16 /* BeVietnam-Bold.ttf */; };
+		BF4F756633F9405080C1D9D1 /* FontAwesome5_Pro_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B044B2EEFF1443A0A633DB03 /* FontAwesome5_Pro_Brands.ttf */; };
+		D45D81743A3043EE97437A04 /* BeVietnam-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64D59BB52A63466E96083D64 /* BeVietnam-ThinItalic.ttf */; };
+		D93E6E8DFF2C464AA14B4167 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 311D3C374E294E94974C99C1 /* Roboto-MediumItalic.ttf */; };
+		E200B4A6DDA54E519FE355D6 /* FontAwesome5_Pro_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DA882ABDD504877BCC2A4D4 /* FontAwesome5_Pro_Solid.ttf */; };
+		E213E151DF6D4A9BAD6F2E05 /* FontAwesome5_Pro_Duotone.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67773B7FC4844399908DF6BA /* FontAwesome5_Pro_Duotone.ttf */; };
+		E3873DCDD1FD49EB8829D0A6 /* BeVietnam-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6929F502FCDC4987855B0791 /* BeVietnam-Medium.ttf */; };
+		E5C9878EB2D046C2A03CE3D7 /* FontAwesome5_Pro_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78EEB16AAFA7435FA19DBE4E /* FontAwesome5_Pro_Light.ttf */; };
+		EE78CB94D11B4DB5AB5E8C8D /* FontAwesome5_Pro_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC5A419A62D54FE387793FD4 /* FontAwesome5_Pro_Regular.ttf */; };
+		FF4C4D2E106C49DA945FC545 /* BeVietnam-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1097D7121F044A3B097B959 /* BeVietnam-Thin.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = TDAppCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* TDAppCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDAppCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* TDAppCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAppCoreTests.m; sourceTree = "<group>"; };
+		020EE49708BC471BADAB8475 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../app/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		04496A73AFE44424B3C525B8 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../app/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		108A251FC572422E9DD80346 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = ../app/assets/fonts/AntDesign.ttf; sourceTree = "<group>"; };
+		1095A44CE4A046D99F6314AE /* BeVietnam-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-ExtraBold.ttf"; path = "../app/assets/fonts/BeVietnam-ExtraBold.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* TDAppCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDAppCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TDAppCore/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = TDAppCore/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TDAppCore/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TDAppCore/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TDAppCore/main.m; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-TDAppCore-TDAppCoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDAppCore-TDAppCoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACBACB2A89B4F649FD493BA /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../app/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		24D4D58A36604543AB7F78CA /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../app/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		25092A8D549F44F388D6C118 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = ../app/assets/fonts/Octicons.ttf; sourceTree = "<group>"; };
+		272051E12BDB46C8A7CEEB44 /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../app/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		277BA45C54314D55BA006E07 /* BeVietnam-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-MediumItalic.ttf"; path = "../app/assets/fonts/BeVietnam-MediumItalic.ttf"; sourceTree = "<group>"; };
+		311D3C374E294E94974C99C1 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../app/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-TDAppCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDAppCore.debug.xcconfig"; path = "Target Support Files/Pods-TDAppCore/Pods-TDAppCore.debug.xcconfig"; sourceTree = "<group>"; };
+		3EA07D68C9A443149ECDE0E9 /* BeVietnam-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-LightItalic.ttf"; path = "../app/assets/fonts/BeVietnam-LightItalic.ttf"; sourceTree = "<group>"; };
+		48C537ABAE9C4022AA06AF99 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = ../app/assets/fonts/EvilIcons.ttf; sourceTree = "<group>"; };
+		521B8475C14F498595D925DD /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = ../app/assets/fonts/FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		55F8F8F011594F54969D2F16 /* BeVietnam-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-Bold.ttf"; path = "../app/assets/fonts/BeVietnam-Bold.ttf"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-TDAppCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDAppCore.release.xcconfig"; path = "Target Support Files/Pods-TDAppCore/Pods-TDAppCore.release.xcconfig"; sourceTree = "<group>"; };
+		57BA5BE868964E4A9F3870E0 /* BeVietnam-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-Regular.ttf"; path = "../app/assets/fonts/BeVietnam-Regular.ttf"; sourceTree = "<group>"; };
+		5899CB5E284A43D085A5EFE0 /* BeVietnam-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-SemiBold.ttf"; path = "../app/assets/fonts/BeVietnam-SemiBold.ttf"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-TDAppCore-TDAppCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDAppCore-TDAppCoreTests.debug.xcconfig"; path = "Target Support Files/Pods-TDAppCore-TDAppCoreTests/Pods-TDAppCore-TDAppCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DA882ABDD504877BCC2A4D4 /* FontAwesome5_Pro_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Solid.ttf; path = ../app/assets/fonts/FontAwesome5_Pro_Solid.ttf; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-TDAppCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDAppCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CBB7A9D82142CE99CC9906 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = ../app/assets/fonts/Fontisto.ttf; sourceTree = "<group>"; };
+		64D59BB52A63466E96083D64 /* BeVietnam-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-ThinItalic.ttf"; path = "../app/assets/fonts/BeVietnam-ThinItalic.ttf"; sourceTree = "<group>"; };
+		6768816F28F273C100D6BB54 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		676D128328F11C83000147B5 /* TDAppCore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TDAppCore-Bridging-Header.h"; sourceTree = "<group>"; };
+		676D128428F11C84000147B5 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		67773B7FC4844399908DF6BA /* FontAwesome5_Pro_Duotone.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Duotone.ttf; path = ../app/assets/fonts/FontAwesome5_Pro_Duotone.ttf; sourceTree = "<group>"; };
+		6929F502FCDC4987855B0791 /* BeVietnam-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-Medium.ttf"; path = "../app/assets/fonts/BeVietnam-Medium.ttf"; sourceTree = "<group>"; };
+		70E10E1228A84874B3CA43CD /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../app/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		78EEB16AAFA7435FA19DBE4E /* FontAwesome5_Pro_Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Light.ttf; path = ../app/assets/fonts/FontAwesome5_Pro_Light.ttf; sourceTree = "<group>"; };
+		7DDCDECB7503486D8E08A290 /* BeVietnam-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/BeVietnam-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		7F714B73AAA54F09B3D459C4 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = ../app/assets/fonts/FontAwesome.ttf; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TDAppCore/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-TDAppCore-TDAppCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDAppCore-TDAppCoreTests.release.xcconfig"; path = "Target Support Files/Pods-TDAppCore-TDAppCoreTests/Pods-TDAppCore-TDAppCoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D4BDAE203294DB08B2EF100 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../app/assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		94BC7E10C3A140BA9EE34DEB /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = ../app/assets/fonts/Ionicons.ttf; sourceTree = "<group>"; };
+		96D2B287707F4E909C0C2BDB /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = ../app/assets/fonts/Zocial.ttf; sourceTree = "<group>"; };
+		99917942AE14451FBB78EDC6 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = ../app/assets/fonts/SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		A02EEF9D261E43BDBC3164C9 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../app/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A9AA082770A64E39913B7372 /* BeVietnam-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-Italic.ttf"; path = "../app/assets/fonts/BeVietnam-Italic.ttf"; sourceTree = "<group>"; };
+		AADE378B5A794B2BB7A9DBA9 /* BeVietnam-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-Light.ttf"; path = "../app/assets/fonts/BeVietnam-Light.ttf"; sourceTree = "<group>"; };
+		B044B2EEFF1443A0A633DB03 /* FontAwesome5_Pro_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Brands.ttf; path = ../app/assets/fonts/FontAwesome5_Pro_Brands.ttf; sourceTree = "<group>"; };
+		B65F4B65D56B4D1EA3E3B59C /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = ../app/assets/fonts/Foundation.ttf; sourceTree = "<group>"; };
+		B6C8BEC091FC4DA0ACE3C3C0 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../app/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BEB0745701B041EAB39C77A1 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = ../app/assets/fonts/Feather.ttf; sourceTree = "<group>"; };
+		BFEEA0B1CC974BBFBBF91039 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = ../app/assets/fonts/MaterialIcons.ttf; sourceTree = "<group>"; };
+		C69DF58F469E42EE89780F3C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = ../app/assets/fonts/FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		C90A32F8D9A94B64A656B4AD /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../app/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CC83E685A65040B3B9151FA2 /* BeVietnam-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-BoldItalic.ttf"; path = "../app/assets/fonts/BeVietnam-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D29E1C771DF843ADBA14A100 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = ../app/assets/fonts/FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EF814D82A1D34ED8BBFAFE4C /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = ../app/assets/fonts/Entypo.ttf; sourceTree = "<group>"; };
+		F1097D7121F044A3B097B959 /* BeVietnam-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-Thin.ttf"; path = "../app/assets/fonts/BeVietnam-Thin.ttf"; sourceTree = "<group>"; };
+		F38FDFEEF09443D98CFC828D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = ../app/assets/fonts/MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		FA4F20653B324256921DE55C /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../app/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		FC5A419A62D54FE387793FD4 /* FontAwesome5_Pro_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Pro_Regular.ttf; path = ../app/assets/fonts/FontAwesome5_Pro_Regular.ttf; sourceTree = "<group>"; };
+		FEC093712D93430C8ED89811 /* BeVietnam-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnam-SemiBoldItalic.ttf"; path = "../app/assets/fonts/BeVietnam-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-TDAppCore-TDAppCoreTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-TDAppCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* TDAppCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* TDAppCoreTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = TDAppCoreTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* TDAppCore */ = {
+			isa = PBXGroup;
+			children = (
+				6768816F28F273C100D6BB54 /* www */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				676D128428F11C84000147B5 /* File.swift */,
+				676D128328F11C83000147B5 /* TDAppCore-Bridging-Header.h */,
+			);
+			name = TDAppCore;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-TDAppCore.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-TDAppCore-TDAppCoreTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* TDAppCore */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* TDAppCoreTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				DE8758E039BF4E54BDD1E562 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* TDAppCore.app */,
+				00E356EE1AD99517003FC87E /* TDAppCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-TDAppCore.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-TDAppCore.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-TDAppCore-TDAppCoreTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-TDAppCore-TDAppCoreTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE8758E039BF4E54BDD1E562 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55F8F8F011594F54969D2F16 /* BeVietnam-Bold.ttf */,
+				CC83E685A65040B3B9151FA2 /* BeVietnam-BoldItalic.ttf */,
+				1095A44CE4A046D99F6314AE /* BeVietnam-ExtraBold.ttf */,
+				7DDCDECB7503486D8E08A290 /* BeVietnam-ExtraBoldItalic.ttf */,
+				A9AA082770A64E39913B7372 /* BeVietnam-Italic.ttf */,
+				AADE378B5A794B2BB7A9DBA9 /* BeVietnam-Light.ttf */,
+				3EA07D68C9A443149ECDE0E9 /* BeVietnam-LightItalic.ttf */,
+				6929F502FCDC4987855B0791 /* BeVietnam-Medium.ttf */,
+				277BA45C54314D55BA006E07 /* BeVietnam-MediumItalic.ttf */,
+				57BA5BE868964E4A9F3870E0 /* BeVietnam-Regular.ttf */,
+				5899CB5E284A43D085A5EFE0 /* BeVietnam-SemiBold.ttf */,
+				FEC093712D93430C8ED89811 /* BeVietnam-SemiBoldItalic.ttf */,
+				F1097D7121F044A3B097B959 /* BeVietnam-Thin.ttf */,
+				64D59BB52A63466E96083D64 /* BeVietnam-ThinItalic.ttf */,
+				B044B2EEFF1443A0A633DB03 /* FontAwesome5_Pro_Brands.ttf */,
+				67773B7FC4844399908DF6BA /* FontAwesome5_Pro_Duotone.ttf */,
+				78EEB16AAFA7435FA19DBE4E /* FontAwesome5_Pro_Light.ttf */,
+				FC5A419A62D54FE387793FD4 /* FontAwesome5_Pro_Regular.ttf */,
+				5DA882ABDD504877BCC2A4D4 /* FontAwesome5_Pro_Solid.ttf */,
+				272051E12BDB46C8A7CEEB44 /* Roboto-Black.ttf */,
+				B6C8BEC091FC4DA0ACE3C3C0 /* Roboto-BlackItalic.ttf */,
+				C90A32F8D9A94B64A656B4AD /* Roboto-Bold.ttf */,
+				04496A73AFE44424B3C525B8 /* Roboto-BoldItalic.ttf */,
+				1ACBACB2A89B4F649FD493BA /* Roboto-Italic.ttf */,
+				70E10E1228A84874B3CA43CD /* Roboto-Light.ttf */,
+				8D4BDAE203294DB08B2EF100 /* Roboto-LightItalic.ttf */,
+				24D4D58A36604543AB7F78CA /* Roboto-Medium.ttf */,
+				311D3C374E294E94974C99C1 /* Roboto-MediumItalic.ttf */,
+				FA4F20653B324256921DE55C /* Roboto-Regular.ttf */,
+				020EE49708BC471BADAB8475 /* Roboto-Thin.ttf */,
+				A02EEF9D261E43BDBC3164C9 /* Roboto-ThinItalic.ttf */,
+				108A251FC572422E9DD80346 /* AntDesign.ttf */,
+				EF814D82A1D34ED8BBFAFE4C /* Entypo.ttf */,
+				48C537ABAE9C4022AA06AF99 /* EvilIcons.ttf */,
+				BEB0745701B041EAB39C77A1 /* Feather.ttf */,
+				7F714B73AAA54F09B3D459C4 /* FontAwesome.ttf */,
+				521B8475C14F498595D925DD /* FontAwesome5_Brands.ttf */,
+				C69DF58F469E42EE89780F3C /* FontAwesome5_Regular.ttf */,
+				D29E1C771DF843ADBA14A100 /* FontAwesome5_Solid.ttf */,
+				62CBB7A9D82142CE99CC9906 /* Fontisto.ttf */,
+				B65F4B65D56B4D1EA3E3B59C /* Foundation.ttf */,
+				94BC7E10C3A140BA9EE34DEB /* Ionicons.ttf */,
+				F38FDFEEF09443D98CFC828D /* MaterialCommunityIcons.ttf */,
+				BFEEA0B1CC974BBFBBF91039 /* MaterialIcons.ttf */,
+				25092A8D549F44F388D6C118 /* Octicons.ttf */,
+				99917942AE14451FBB78EDC6 /* SimpleLineIcons.ttf */,
+				96D2B287707F4E909C0C2BDB /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* TDAppCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TDAppCoreTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = TDAppCoreTests;
+			productName = TDAppCoreTests;
+			productReference = 00E356EE1AD99517003FC87E /* TDAppCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* TDAppCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TDAppCore" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDAppCore;
+			productName = TDAppCore;
+			productReference = 13B07F961A680F5B00A75B9A /* TDAppCore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1400;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TDAppCore" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* TDAppCore */,
+				00E356ED1AD99517003FC87E /* TDAppCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BF2365045C7D40EA844173AD /* BeVietnam-Bold.ttf in Resources */,
+				74561BE56F2A46B29655C834 /* BeVietnam-BoldItalic.ttf in Resources */,
+				0C60C43DCBCB4C64AB6978A9 /* BeVietnam-ExtraBold.ttf in Resources */,
+				79AE6B51441C4BDC8A212319 /* BeVietnam-ExtraBoldItalic.ttf in Resources */,
+				16E9CAC2B4E34FD5A8291491 /* BeVietnam-Italic.ttf in Resources */,
+				311B4793B02148E68F86B9ED /* BeVietnam-Light.ttf in Resources */,
+				A3BCBDEF078D44639AE4DF2F /* BeVietnam-LightItalic.ttf in Resources */,
+				E3873DCDD1FD49EB8829D0A6 /* BeVietnam-Medium.ttf in Resources */,
+				66265519E4DC4B5AA762C429 /* BeVietnam-MediumItalic.ttf in Resources */,
+				0F39A27DDB754C519AA2DB4A /* BeVietnam-Regular.ttf in Resources */,
+				6768817028F273C100D6BB54 /* www in Resources */,
+				094ECFDC09FB497FBB4E3CD7 /* BeVietnam-SemiBold.ttf in Resources */,
+				437E21FFFA8B44389C0A93DF /* BeVietnam-SemiBoldItalic.ttf in Resources */,
+				FF4C4D2E106C49DA945FC545 /* BeVietnam-Thin.ttf in Resources */,
+				D45D81743A3043EE97437A04 /* BeVietnam-ThinItalic.ttf in Resources */,
+				BF4F756633F9405080C1D9D1 /* FontAwesome5_Pro_Brands.ttf in Resources */,
+				E213E151DF6D4A9BAD6F2E05 /* FontAwesome5_Pro_Duotone.ttf in Resources */,
+				E5C9878EB2D046C2A03CE3D7 /* FontAwesome5_Pro_Light.ttf in Resources */,
+				EE78CB94D11B4DB5AB5E8C8D /* FontAwesome5_Pro_Regular.ttf in Resources */,
+				E200B4A6DDA54E519FE355D6 /* FontAwesome5_Pro_Solid.ttf in Resources */,
+				32ED8DD573844E28AA814A7B /* Roboto-Black.ttf in Resources */,
+				486BD32E78454061ACCA91A4 /* Roboto-BlackItalic.ttf in Resources */,
+				3C0CE49784D046A89E983E48 /* Roboto-Bold.ttf in Resources */,
+				5F8A2EA0873C4AE486EE296A /* Roboto-BoldItalic.ttf in Resources */,
+				009C45C2BBBE4005909ECE37 /* Roboto-Italic.ttf in Resources */,
+				20FC5D0F62C846B4A8CB1295 /* Roboto-Light.ttf in Resources */,
+				0B71E26A363C4B50BD3D433D /* Roboto-LightItalic.ttf in Resources */,
+				3877491856C3460DA01305FC /* Roboto-Medium.ttf in Resources */,
+				D93E6E8DFF2C464AA14B4167 /* Roboto-MediumItalic.ttf in Resources */,
+				BB784A986B444EE18FD0BD64 /* Roboto-Regular.ttf in Resources */,
+				6FC3D5424E1E41FF926E3C66 /* Roboto-Thin.ttf in Resources */,
+				A6C43A32B3104ECBB0F1D70C /* Roboto-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDAppCore/Pods-TDAppCore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDAppCore/Pods-TDAppCore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TDAppCore/Pods-TDAppCore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TDAppCore-TDAppCoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TDAppCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDAppCore-TDAppCoreTests/Pods-TDAppCore-TDAppCoreTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDAppCore-TDAppCoreTests/Pods-TDAppCore-TDAppCoreTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TDAppCore-TDAppCoreTests/Pods-TDAppCore-TDAppCoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDAppCore/Pods-TDAppCore-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDAppCore/Pods-TDAppCore-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TDAppCore/Pods-TDAppCore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDAppCore-TDAppCoreTests/Pods-TDAppCore-TDAppCoreTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDAppCore-TDAppCoreTests/Pods-TDAppCore-TDAppCoreTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TDAppCore-TDAppCoreTests/Pods-TDAppCore-TDAppCoreTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* TDAppCoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				676D128528F11C84000147B5 /* File.swift in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* TDAppCore */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-TDAppCore-TDAppCoreTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TDAppCoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDAppCore.app/TDAppCore";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-TDAppCore-TDAppCoreTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = TDAppCoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDAppCore.app/TDAppCore";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-TDAppCore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TDAppCore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = TDAppCore;
+				SWIFT_OBJC_BRIDGING_HEADER = "TDAppCore-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-TDAppCore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = TDAppCore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = TDAppCore;
+				SWIFT_OBJC_BRIDGING_HEADER = "TDAppCore-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TDAppCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TDAppCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TDAppCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
