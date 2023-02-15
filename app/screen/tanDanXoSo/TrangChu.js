@@ -95,7 +95,7 @@ const TrangChu = () => {
 
   return (
     <View style={{flex: 1}}>
-      <View style={{flex: 1, backgroundColor: '#006699'}}>
+      <View style={{flex: 1, backgroundColor: '#112951'}}>
         <View
           style={{flexDirection: 'row', justifyContent: 'center', alignContent: 'center', alignItems: 'center', marginTop: 30}}>
           <View>
@@ -108,7 +108,7 @@ const TrangChu = () => {
         </View>
       </View>
 
-      <View style={{flex: 7}}>
+      <View style={{flex: 7, backgroundColor:'#FFF'}}>
         <SafeAreaView style={styles.container}>
           <FlatList 
           data={DATA} 
@@ -119,7 +119,7 @@ const TrangChu = () => {
       </View>
       {/* thanh dưới */}
       <View
-        style={{flex: 0.7, backgroundColor: '#006699', justifyContent: 'center', alignItems: 'center', alignContent: 'center'}}>
+        style={{flex: 0.7, backgroundColor: '#112951', justifyContent: 'center', alignItems: 'center', alignContent: 'center'}}>
         <View style={{flexDirection: 'row'}}>
           <View style={{flex: 2}}>
             
@@ -128,7 +128,7 @@ const TrangChu = () => {
               onPress={() => {
                 navigation.navigate('userScreen');
               }}
-              style={{backgroundColor: '#006699', borderRadius: 25}}>
+              style={{backgroundColor: '#112951', borderRadius: 25}}>
                 <FontAwesome name={'user'} solid style={{color: '#fff', marginHorizontal: 25}} size={26} />
               <Text style={{fontSize: 16, textAlign: 'center', color: '#fff'}}>Cá nhân</Text>
             </TouchableOpacity>
@@ -179,25 +179,3 @@ const styles = StyleSheet.create({
     fontSize: 10,
   },
 });
-
-/*<View> 
-                    <Image
-                        source={require('../../assets/images/ketqua.jpg')}
-                    />
-                    <Image
-                        source={require('../../assets/images/homnay.jpg')}
-                    />
-                    <Image
-                        source={require('../../assets/images/ketquadai.jpg')}
-                    />
-                    <Image
-                        source={require('../../assets/images/thongke.jpg')}
-                    />
-                    <Image
-                        source={require('../../assets/images/quaythu.jpg')}
-                    />
-                    <Image
-                        source={require('../../assets/images/vietlot.jpg')}
-                    />
-
-                </View> */
