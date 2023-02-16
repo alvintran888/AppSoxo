@@ -10,7 +10,7 @@ import AppBottomTab from './AppBottomTab';
 
 import {ListLoaiDichVuScreen} from '@app/screen/loaidichvu';
 
-import {BottomTabXoSo, TrangChu, userScreen, KetQua, HomNay } from '../screen/tanDanXoSo';
+import {BottomTabXoSo, TrangChu, userScreen, KetQua, HomNay, MienBacDetail } from '../screen/tanDanXoSo';
 // import TrangChu from '../screen/account/TrangChu';
 // import userScreen from '../screen/account/userScreen';
 
@@ -24,7 +24,7 @@ const AppStack = () => {
 
        <Stack.Screen name="TrangChu" component={TrangChu} />
       <Stack.Screen name="userScreen" component={userScreen} />
-      {/* <Stack.Screen name="BottomTabXoSo" component={BottomTabXoSo} /> */}
+      <Stack.Screen name="MienBacDetail" component={MienBacDetail} />
       <Stack.Screen name="KetQua" component={KetQua} />
       <Stack.Screen name="HomNay" component={HomNay} />
     </Stack.Navigator>
