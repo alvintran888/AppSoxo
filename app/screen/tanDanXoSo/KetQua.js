@@ -6,11 +6,17 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome5';
 const KetQua = () => {
     const navigation = useNavigation();
     return (
-        <View>
+        <View style={{flex:1}}>
 
-            <Text style={{color: "#686868", fontSize:40}}>Test case</Text>
+        
+        <TouchableOpacity onPress={() => {
+            navigation.goBack();
+        }} style={{height:70,width:70, padding:20}}>
+            <FontAwesome name={'arrow-left'} size={30} color={'#CFCFCF'}/>
+        </TouchableOpacity>
 
         </View>
+
     );
 
 };
