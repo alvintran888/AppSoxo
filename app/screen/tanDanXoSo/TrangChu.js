@@ -2,6 +2,8 @@ import Item from '@app/components/Header';
 import {View, Text, Image, TouchableOpacity, StyleSheet, FlatList, SafeAreaView} from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome5Pro';
 import {useNavigation} from '@react-navigation/native';
+import { Header } from '@app/components';
+import {Appbar} from 'react-native-paper';
 
 
 
@@ -95,7 +97,7 @@ const TrangChu = () => {
 
   return (
     <View style={{flex: 1}}>
-      <View style={{flex: 1, backgroundColor: '#112951'}}>
+      {/* <View style={{flex: 1, backgroundColor: '#112951'}}>
         <View
           style={{flexDirection: 'row', justifyContent: 'center', alignContent: 'center', alignItems: 'center', marginTop: 30}}>
           <View>
@@ -106,8 +108,12 @@ const TrangChu = () => {
             <Text style={{fontSize: 23, marginLeft: 20, color: 'white'}}>Xổ số trực tiếp</Text>
           </View>
         </View>
-      </View>
-
+      </View> */}
+      <Header title={'Xổ số trực tiếp'}  
+              backgroundColor={'#112951'}
+              leftComponent={'true'}
+              
+      />
       <View style={{flex: 7, backgroundColor:'#FFF'}}>
         <SafeAreaView style={styles.container}>
           <FlatList 
@@ -118,7 +124,7 @@ const TrangChu = () => {
         </SafeAreaView>
       </View>
       {/* thanh dưới */}
-      <View
+      {/* <View
         style={{flex: 0.7, backgroundColor: '#112951', justifyContent: 'center', alignItems: 'center', alignContent: 'center'}}>
         <View style={{flexDirection: 'row'}}>
           <View style={{flex: 2}}>
@@ -154,7 +160,7 @@ const TrangChu = () => {
             <Text style={{fontSize: 18, textAlign: 'center', color: '#fff'}}>Cài đặt</Text>
           </View>
         </View>
-      </View>
+      </View> */}
     </View>
   );
 };

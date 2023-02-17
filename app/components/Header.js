@@ -22,7 +22,7 @@ const Item = ({leftComponent, isStack, title, showRight, RightComponent, backgro
               alignItems: 'center',
               justifyContent: 'center',
               width: 24,
-              height: 24,
+              height: 30,
             }}
             onPress={() => {
               isStack ? navigation.goBack() : navigation.openDrawer();
@@ -31,16 +31,14 @@ const Item = ({leftComponent, isStack, title, showRight, RightComponent, backgro
               } catch (error) {}
             }}>
             <FontAwesome
-              name={isStack ? 'long-arrow-left' : 'bars'}
-              size={24}
+              name={isStack ? 'angle-left' : 'bars'}
+              size={30}
               color={textColor ? textColor : Colors.white}
-              underlayColor="#00000000"
+              underlayColor="#F89"
               containerStyle={{paddingStart: 0, marginHorizontal: 10}}
             />
           </TouchableOpacity>
-        ) : (
-          <></>
-        )
+        ) : {}
       }
       centerComponent={{
         text: title,
@@ -55,9 +53,11 @@ const Item = ({leftComponent, isStack, title, showRight, RightComponent, backgro
       rightComponent={RightComponent && <RightComponent />}
       containerStyle={{
         backgroundColor: backgroundColor ? backgroundColor : Colors.primary,
-        justifyContent: 'space-around',
+        justifyContent: 'center',
+        alignItems: 'center'
+        
       }}
-      centerContainerStyle={{justifyContent: 'center'}}
+      centerContainerStyle={{justifyContent: 'center', alignItems: 'center'}}
     />
   );
 };

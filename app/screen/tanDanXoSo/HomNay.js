@@ -2,14 +2,16 @@ import React, {useState} from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { View, Text, StyleSheet, TouchableOpacity, Image, FlatList } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome5';
+import { Header } from '@app/components';
 
-import HomNayItem from './MienBacDetail'
+import MienBacDetail from './MienBacDetail'
 const HomNay = () => {
     const navigation = useNavigation();
     const [homnay, SetHomNay] = useState();
     return (
       <View style={{flex: 1}}>
-        <View style={{flexDirection: 'row', height: 65, backgroundColor:'#112A51'}}>
+
+        {/* <View style={{flexDirection: 'row', height: 65, backgroundColor:'#112A51'}}>
           <TouchableOpacity
             onPress={() => {
               navigation.goBack();
@@ -24,7 +26,12 @@ const HomNay = () => {
             </Text>
           </View>
 
-        </View>
+        </View> */}
+        <Header title={'Xổ số hôm nay'}
+                backgroundColor={'#112A51'}
+                leftComponent={'true'}
+                isStack={'true'}
+        />
 
         {/* ////////////////////////////////////////// */}
         <TouchableOpacity 
