@@ -42,6 +42,18 @@ const MienBacDetail = () => {
                     </View>
                 </View>
                 {/* email */}
+
+                {/* MaDb */}
+                <View style={{height:40, width:'100%', backgroundColor:'#CFCF', flexDirection:'row' }}>
+                        <View style={{flex:1, backgroundColor:'#CFCFCF'}}>
+
+                        </View>
+
+                        <View style={{flex:6}}>
+                            <Text>{item.MaDb}</Text>
+                        </View>
+
+                    </View>
                 
             
           </TouchableOpacity>
@@ -54,7 +66,7 @@ const MienBacDetail = () => {
         const fetchData = async () => {
           const res = await fetch('https://api.xoso.me/app/json-kq-mienbac?name=KQXS&v=2&ngay_quay=2023-03-12');
           const json = await res.json();
-          console.log(json.data.lotData);
+          console.log(json.data.lotData.MaDb);
         }
         
         fetchData();
@@ -93,13 +105,14 @@ const MienBacDetail = () => {
                     </View>
                     <View style={{ height: 1, backgroundColor: '#CFCFCF' }} />
 
-                
-                    <View style={{height:40, width:'100%', flexDirection:'row', backgroundColor:'red', }}>
-                        <Text></Text>
-
-                    </View>
+                    
                 
 
+                    <FlatList
+                    data={_renderItem}
+                    randerItem={{item}}
+                    keyExtractor={item => item.MaDb}
+                    />
                 </View>
 
             
