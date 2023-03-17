@@ -43,17 +43,7 @@ const MienBacDetail = () => {
                 </View>
                 {/* email */}
 
-                {/* MaDb */}
-                <View style={{height:40, width:'100%', backgroundColor:'#CFCF', flexDirection:'row' }}>
-                        <View style={{flex:1, backgroundColor:'#CFCFCF'}}>
-
-                        </View>
-
-                        <View style={{flex:6}}>
-                            <Text>{item.MaDb}</Text>
-                        </View>
-
-                    </View>
+                
                 
             
           </TouchableOpacity>
@@ -66,60 +56,64 @@ const MienBacDetail = () => {
         const fetchData = async () => {
           const res = await fetch('https://api.xoso.me/app/json-kq-mienbac?name=KQXS&v=2&ngay_quay=2023-03-12');
           const json = await res.json();
-          console.log(json.data.lotData.MaDb);
+          setMaDb(json.data.lotData.MaDb);
         }
         
-        fetchData();
+        fetchData();  
       },[])
 
 
     return (
-        
-        <View style={{flex:1}}>
+      <View style={{flex: 1}}>
+        <Header title={'Xổ số Miền Bắc'} backgroundColor={'#112951'} leftComponent={'true'} isStack={'true'} />
 
-            <Header
-                    title={'Xổ số Miền Bắc'}
-                    backgroundColor={'#112951'}
-                    leftComponent={'true'}
-                    isStack={'true'}
-                    
-            />
-           
-                <View style={{ flex: 1 }}>
-                   
-                    <View style={{ height: 80, backgroundColor: '#FFFFFF', justifyContent: 'center', alignItems: 'center' }}>
-                        <View style={{}}>
-                            <Text style={{ fontSize: 18, fontWeight: '600', color: 'red' }}>
-                                Xổ số Miền Bắc (Hà Nội)
-                            </Text>
-                        </View>
+        <View style={{flex: 1}}>
+          <View style={{height: 80, backgroundColor: '#FFFFFF', justifyContent: 'center', alignItems: 'center'}}>
+            <View style={{}}>
+              <Text style={{fontSize: 18, fontWeight: '600', color: 'red'}}>Xổ số Miền Bắc (Hà Nội)</Text>
+            </View>
 
-                        <View>
-                            <TouchableOpacity style={{ backgroundColor: 'white', borderRadius: 50 }} onPress={() => setOpen(true)}>
-                                <Text style={{}}>
-                                    {moment(date).format('YYYY-MM-DD')}
-                                </Text>
-                            </TouchableOpacity>
-                        </View>
+            <View>
+              <TouchableOpacity style={{backgroundColor: 'white', borderRadius: 50}} onPress={() => setOpen(true)}>
+                <Text style={{}}>{moment(date).format('YYYY-MM-DD')}</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+          <View style={{height: 1, backgroundColor: '#CFCFCF'}} />
 
-                    </View>
-                    <View style={{ height: 1, backgroundColor: '#CFCFCF' }} />
+          {/* MaDb */}
+          <View style={{height: 40, width: '100%', backgroundColor: '#CFCF', flexDirection: 'row'}}>
+            <View style={{flex: 1, backgroundColor: '#CFCFCF', justifyContent: 'center', alignItems: 'center'}}>
+              <Text>ĐB</Text>
+            </View>
 
-                    
-                
+            <View style={{flex: 6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}>
+              {maDb.map((item, index) => (
+                <Text>{item}</Text>
+              ))}
+            </View>
+          </View>
 
-                    <FlatList
-                    data={_renderItem}
-                    randerItem={{item}}
-                    keyExtractor={item => item.MaDb}
-                    />
-                </View>
+          {/* MaDb */}
+          <View style={{height: 40, width: '100%', backgroundColor: '#CFCF', flexDirection: 'row'}}>
+            <View style={{flex: 1, backgroundColor: '#CFCFCF', justifyContent: 'center', alignItems: 'center'}}>
+              <Text>1</Text>
+            </View>
 
-            
+            <View style={{flex: 6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}>
+              {/* {giaiNhat.map((item, index) => (
+                <Text>{item}</Text>
+              ))} */}
+            </View>
+          </View>
 
-         </View>
-         
-            
-    )
+          <FlatList
+            data={_renderItem}
+            // renderItem={{item}}
+            keyExtractor={item => item}
+          />
+        </View>
+      </View>
+    );
 }
 export default MienBacDetail;
