@@ -86,15 +86,22 @@ const MienBacDetail = () => {
           <View style={{height: 40, width: '100%', backgroundColor: '#F9F9F9', flexDirection: 'row'}}>
 
             <View style={{flex: 1, alignItems:'center',justifyContent:'center'}}>
-              <Text>ĐB</Text>
+              {/* <Text>ĐB</Text> */}
             </View>
 
             <View style={{height:50, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex: 6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}>
-              {maDb.map((item, index) => (
-                <Text>{item}</Text>
-              ))}
+                <Text style={styles.MaDb}>1PU</Text>
+                <Text style={styles.MaDb}>2PU</Text>
+                <Text style={styles.MaDb}>3PU</Text>
+                <Text style={styles.MaDb}>4PU</Text>
+                <Text style={styles.MaDb}>5PU</Text>
+                <Text style={styles.MaDb}>6PU</Text>
+
+              {/* {maDb.map((item, index) => (
+                <Text>{item.maDb}</Text>
+              ))} */}
             </View>
 
           </View>
@@ -225,11 +232,9 @@ const MienBacDetail = () => {
             <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
+                <Text style={styles.ketqua}>617</Text>
+                <Text style={styles.ketqua}>012</Text>
+                <Text style={styles.ketqua}>182</Text>
             </View>
 
           </View>
@@ -246,11 +251,10 @@ const MienBacDetail = () => {
             <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
+                <Text style={styles.g7}>29</Text>
+                <Text style={styles.g7}>54</Text>
+                <Text style={styles.g7}>10</Text>
+                <Text style={styles.g7}>42</Text>
             </View>
 
           </View>
@@ -271,7 +275,19 @@ const styles = StyleSheet.create({
   ketqua:{
     fontSize:28, 
     fontWeight:'bold', 
-    color:'black'
+    color:'black',
+  },
+
+  g7:{
+    fontSize: 33,
+    fontWeight:'bold',
+    color:'red'
+  },
+
+  MaDb:{
+    fontSize: 20,
+    fontWeight: '500',
+    color:'red'
   }
 
 });
