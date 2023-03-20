@@ -111,11 +111,7 @@ const MienBacDetail = () => {
             <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
+                <Text style={{fontSize:35, fontWeight:'bold', color:'red'}}>86903</Text>
             </View>
 
           </View>
@@ -132,11 +128,7 @@ const MienBacDetail = () => {
             <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
+                <Text style={{fontSize:30, fontWeight:'bold', color:'black'}}>51904</Text>
             </View>
 
           </View>
@@ -153,11 +145,8 @@ const MienBacDetail = () => {
             <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
+                <Text style={styles.ketqua}>86833</Text>
+                <Text style={styles.ketqua}>22870</Text>
             </View>
 
           </View>
@@ -165,20 +154,22 @@ const MienBacDetail = () => {
           <View style={{height:1.5, backgroundColor:'#ACACAC'}}/>
 
           {/* G.3 */}
-          <View style={{height:60, flexDirection:'row', backgroundColor:'white', }}>
+          <View style={{height:100, flexDirection:'row', backgroundColor:'white', }}>
 
             <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
               <Text>G.3</Text>
             </View>
 
-            <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
+            <View style={{height:100, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
+                <Text style={styles.ketqua}>85621</Text>
+                <Text style={styles.ketqua}>16256</Text>
+                <Text style={styles.ketqua}>18746</Text>
+                {/* <Text style={styles.ketqua}>84156</Text>
+                <Text style={styles.ketqua}>68556</Text>
+                <Text style={styles.ketqua}>38891</Text> */}
+
             </View>
 
           </View>
@@ -195,11 +186,10 @@ const MienBacDetail = () => {
             <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
+                <Text style={styles.ketqua}>3826</Text>
+                <Text style={styles.ketqua}>9033</Text>
+                <Text style={styles.ketqua}>6756</Text>
+                <Text style={styles.ketqua}>8348</Text>
             </View>
 
           </View>
@@ -216,11 +206,9 @@ const MienBacDetail = () => {
             <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
-                <Text>nghia</Text>
+                <Text style={styles.ketqua}>9234</Text>
+                <Text style={styles.ketqua}>5163</Text>
+                <Text style={styles.ketqua}>4061</Text>
             </View>
 
           </View>
@@ -278,3 +266,12 @@ const MienBacDetail = () => {
     );
 }
 export default MienBacDetail;
+const styles = StyleSheet.create({
+
+  ketqua:{
+    fontSize:28, 
+    fontWeight:'bold', 
+    color:'black'
+  }
+
+});
