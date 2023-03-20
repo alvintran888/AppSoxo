@@ -18,38 +18,37 @@ const MienBacDetail = () => {
     const navigation = useNavigation();
     const [open, setOpen] = useState(false);
     const [date, setDate] = useState(new Date());
-    const [dataNV, setDataNV] = useState([]);
     const [maDb, setMaDb] = useState([]);
 
-    const _renderItem = ({item}) => {
-        return (
-           <TouchableOpacity style={{flexDirection:'row', margin: 10, padding:10}}>
-                {/* image */}
-                <View style={{flex:1, }}>
+    // const _renderItem = ({item}) => {
+    //     return (
+    //        <TouchableOpacity style={{flexDirection:'row', margin: 10, padding:10}}>
+    //             {/* image */}
+    //             <View style={{flex:1, }}>
 
-                <Image source={{uri: item.avatar}} style={{height:100, width:120, borderRadius:20}}/>
+    //             <Image source={{uri: item.avatar}} style={{height:100, width:120, borderRadius:20}}/>
 
-                </View>
-                    {/* ten */}
-                <View style={{flex: 2 }}>
-                    <View style={{ flex:0.3, flexDirection: 'row', marginLeft: 15, marginTop: 5,}}>
-                        <Text style={{ fontSize: 20, paddingRight: 5 }}>{item.first_name}</Text>
-                        <Text style={{ fontSize: 20 }}>{item.last_name}</Text>
-                    </View>
+    //             </View>
+    //                 {/* ten */}
+    //             <View style={{flex: 2 }}>
+    //                 <View style={{ flex:0.3, flexDirection: 'row', marginLeft: 15, marginTop: 5,}}>
+    //                     <Text style={{ fontSize: 20, paddingRight: 5 }}>{item.first_name}</Text>
+    //                     <Text style={{ fontSize: 20 }}>{item.last_name}</Text>
+    //                 </View>
 
-                    <View style={{flex:3, marginLeft: 15,}}>
-                    <Text style={{ fontSize: 13 }}>Email:{item.email}</Text>
-                    </View>
-                </View>
-                {/* email */}
+    //                 <View style={{flex:3, marginLeft: 15,}}>
+    //                 <Text style={{ fontSize: 13 }}>Email:{item.email}</Text>
+    //                 </View>
+    //             </View>
+    //             {/* email */}
 
                 
                 
             
-          </TouchableOpacity>
+    //       </TouchableOpacity>
       
-        );
-      };
+    //     );
+    //   };
 
     useEffect(() => {
 
@@ -57,6 +56,7 @@ const MienBacDetail = () => {
           const res = await fetch('https://api.xoso.me/app/json-kq-mienbac?name=KQXS&v=2&ngay_quay=2023-03-12');
           const json = await res.json();
           setMaDb(json.data.lotData.MaDb);
+          console.log(json.data.lotData.MaDb);
         }
         
         fetchData();  
@@ -81,37 +81,198 @@ const MienBacDetail = () => {
           </View>
           <View style={{height: 1, backgroundColor: '#CFCFCF'}} />
 
+
           {/* MaDb */}
-          <View style={{height: 40, width: '100%', backgroundColor: '#CFCF', flexDirection: 'row'}}>
-            <View style={{flex: 1, backgroundColor: '#CFCFCF', justifyContent: 'center', alignItems: 'center'}}>
+          <View style={{height: 40, width: '100%', backgroundColor: '#F9F9F9', flexDirection: 'row'}}>
+
+            <View style={{flex: 1, alignItems:'center',justifyContent:'center'}}>
               <Text>ĐB</Text>
             </View>
+
+            <View style={{height:50, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex: 6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}>
               {maDb.map((item, index) => (
                 <Text>{item}</Text>
               ))}
             </View>
-          </View>
 
-          {/* MaDb */}
-          <View style={{height: 40, width: '100%', backgroundColor: '#CFCF', flexDirection: 'row'}}>
-            <View style={{flex: 1, backgroundColor: '#CFCFCF', justifyContent: 'center', alignItems: 'center'}}>
-              <Text>1</Text>
+          </View>
+          
+          <View style={{height:1, backgroundColor:'#ACACAC'}}/>
+          
+          {/* G.ĐB */}
+          <View style={{height:60, flexDirection:'row', backgroundColor:'white', }}>
+
+            <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+              <Text>G.ĐB</Text>
             </View>
 
-            <View style={{flex: 6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}>
-              {/* {giaiNhat.map((item, index) => (
-                <Text>{item}</Text>
-              ))} */}
+            <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
+
+            <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
             </View>
+
           </View>
 
-          <FlatList
-            data={_renderItem}
-            // renderItem={{item}}
-            keyExtractor={item => item}
-          />
+          <View style={{height:1.5, backgroundColor:'#ACACAC'}}/>
+
+          {/* G.1 */}
+          <View style={{height:60, flexDirection:'row', backgroundColor:'white', }}>
+
+            <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+              <Text>G.1</Text>
+            </View>
+
+            <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
+
+            <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+            </View>
+
+          </View>
+
+          <View style={{height:1.5, backgroundColor:'#ACACAC'}}/>
+
+          {/* G.2 */}
+          <View style={{height:60, flexDirection:'row', backgroundColor:'white', }}>
+
+            <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+              <Text>G.2</Text>
+            </View>
+
+            <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
+
+            <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+            </View>
+
+          </View>
+
+          <View style={{height:1.5, backgroundColor:'#ACACAC'}}/>
+
+          {/* G.3 */}
+          <View style={{height:60, flexDirection:'row', backgroundColor:'white', }}>
+
+            <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+              <Text>G.3</Text>
+            </View>
+
+            <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
+
+            <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+            </View>
+
+          </View>
+
+          <View style={{height:1.5, backgroundColor:'#ACACAC'}}/>
+
+          {/* G.4 */}
+          <View style={{height:60, flexDirection:'row', backgroundColor:'white', }}>
+
+            <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+              <Text>G.4</Text>
+            </View>
+
+            <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
+
+            <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+            </View>
+
+          </View>
+
+          <View style={{height:1.5, backgroundColor:'#ACACAC'}}/>
+
+          {/* G.5 */}
+          <View style={{height:60, flexDirection:'row', backgroundColor:'white', }}>
+
+            <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+              <Text>G.5</Text>
+            </View>
+
+            <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
+
+            <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+            </View>
+
+          </View>
+
+          <View style={{height:1.5, backgroundColor:'#ACACAC'}}/>
+
+          {/* G.6 */}
+          <View style={{height:60, flexDirection:'row', backgroundColor:'white', }}>
+
+            <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+              <Text>G.6</Text>
+            </View>
+
+            <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
+
+            <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+            </View>
+
+          </View>
+
+          <View style={{height:1.5, backgroundColor:'#ACACAC'}}/>
+
+          {/* G.7 */}
+          <View style={{height:60, flexDirection:'row', backgroundColor:'white', }}>
+
+            <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+              <Text>G.7</Text>
+            </View>
+
+            <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
+
+            <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+                <Text>nghia</Text>
+            </View>
+
+          </View>
+
+          <View style={{height:1.5, backgroundColor:'#ACACAC'}}/>
+
+          
+
+
+
         </View>
       </View>
     );
