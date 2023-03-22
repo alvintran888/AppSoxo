@@ -12,7 +12,7 @@ import {
 import FontAwesome from 'react-native-vector-icons/FontAwesome5Pro';
 import { Header } from '@app/components';
 import moment from 'moment';
-
+import axios from 'axios';
 
 const MienBacDetail = () => {
     const navigation = useNavigation();
@@ -50,18 +50,30 @@ const MienBacDetail = () => {
     //     );
     //   };
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        const fetchData = async () => {
-          const res = await fetch('https://api.xoso.me/app/json-kq-mienbac?name=KQXS&v=2&ngay_quay=2023-03-12');
-          const json = await res.json();
-          setMaDb(json.data.lotData.MaDb);
-          console.log(json.data.lotData.MaDb);
-        }
+    //     const fetchData = async () => {
+    //       const res = await fetch('https://api.xoso.me/app/json-kq-mienbac?name=KQXS&v=2&ngay_quay=2023-03-12');
+    //       const json = await res.json();
+    //       setMaDb(json.data.lotData.MaDb);
+    //       console.log(json.data.lotData.MaDb);
+    //     }
         
-        fetchData();  
-      },[])
+    //     fetchData();  
+    //   },[])
 
+    useEffect(() => {
+      const fetchData = async () => {
+        axios({
+          method: 'get',
+          url: 'https://api.xoso.me/app/json-kq-province?name=KQXS&v=2&province_id=9&ngay_quay=2022-10-26'
+        }).then((res) => {
+          console.log(res.data); 
+        })
+      };
+
+      fetchData();
+    }, [])
 
     return (
       <View style={{flex: 1}}>
@@ -92,16 +104,16 @@ const MienBacDetail = () => {
             <View style={{height:50, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex: 6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}>
-                <Text style={styles.MaDb}>1PU</Text>
+                {/* <Text style={styles.MaDb}>1PU</Text>
                 <Text style={styles.MaDb}>2PU</Text>
                 <Text style={styles.MaDb}>3PU</Text>
                 <Text style={styles.MaDb}>4PU</Text>
                 <Text style={styles.MaDb}>5PU</Text>
-                <Text style={styles.MaDb}>6PU</Text>
+                <Text style={styles.MaDb}>6PU</Text> */}
 
-              {/* {maDb.map((item, index) => (
-                <Text>{item.maDb}</Text>
-              ))} */}
+              {maDb.map((item, index) => (
+                <Text style={styles.MaDb}>{item}</Text>
+              ))}
             </View>
 
           </View>
