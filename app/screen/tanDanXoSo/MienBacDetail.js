@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome5Pro';
 import { Header } from '@app/components';
-import moment from 'moment';
+import moment from 'moment';    //hàm xư lý datetime
 import axios from 'axios';
 
 const MienBacDetail = () => {
