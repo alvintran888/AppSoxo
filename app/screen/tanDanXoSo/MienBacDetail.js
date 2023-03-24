@@ -19,6 +19,7 @@ const MienBacDetail = () => {
     const [open, setOpen] = useState(false);
     const [date, setDate] = useState(new Date());
     const [maDb, setMaDb] = useState([]);
+    const [dB, setDB] = useState([]);
 
     // const _renderItem = ({item}) => {
     //     return (
@@ -50,30 +51,32 @@ const MienBacDetail = () => {
     //     );
     //   };
 
-    // useEffect(() => {
-
-    //     const fetchData = async () => {
-    //       const res = await fetch('https://api.xoso.me/app/json-kq-mienbac?name=KQXS&v=2&ngay_quay=2023-03-12');
-    //       const json = await res.json();
-    //       setMaDb(json.data.lotData.MaDb);
-    //       console.log(json.data.lotData.MaDb);
-    //     }
-        
-    //     fetchData();  
-    //   },[])
-
     useEffect(() => {
-      const fetchData = async () => {
-        axios({
-          method: 'get',
-          url: 'https://api.xoso.me/app/json-kq-province?name=KQXS&v=2&province_id=9&ngay_quay=2022-10-26'
-        }).then((res) => {
-          console.log(res.data); 
-        })
-      };
 
-      fetchData();
-    }, [])
+        const fetchData = async () => {
+          const res = await fetch('https://api.xoso.me/app/json-kq-mienbac?name=KQXS&v=2&ngay_quay=2023-03-12');
+          const json = await res.json();
+          setMaDb(json.data.lotData.MaDb);
+          console.log(json.data.lotData.MaDb);
+          setDB(json.data.lotData.DB);
+          console.log(json.data.lotData.DB);
+        }
+        
+        fetchData();  
+      },[])
+
+    // useEffect(() => {
+    //   const fetchData = async () => {
+    //     axios({
+    //       method: 'get',
+    //       url: 'https://api.xoso.me/app/json-kq-province?name=KQXS&v=2&province_id=9&ngay_quay=2022-10-26'
+    //     }).then((res) => {
+    //       console.log(res.data); 
+    //     })
+    //   };
+
+    //   fetchData();
+    // }, [])
 
     return (
       <View style={{flex: 1}}>
@@ -130,7 +133,11 @@ const MienBacDetail = () => {
             <View style={{height:60, width:1, backgroundColor:'#ACACAC'}}></View>
 
             <View style={{flex:6, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}> 
-                <Text style={{fontSize:35, fontWeight:'bold', color:'red'}}>86903</Text>
+            {dB.map((item, index) => (
+              <Text style={{fontSize:35, fontWeight:'bold', color:'red'}}>{item}</Text>
+                // <Text style={styles.MaDb}>{item}</Text>
+              ))}
+                
             </View>
 
           </View>

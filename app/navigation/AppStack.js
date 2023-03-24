@@ -10,23 +10,27 @@ import AppBottomTab from './AppBottomTab';
 
 import {ListLoaiDichVuScreen} from '@app/screen/loaidichvu';
 
-import {BottomTabXoSo, TrangChu, userScreen, KetQua, HomNay, MienBacDetail } from '../screen/tanDanXoSo';
-// import TrangChu from '../screen/account/TrangChu';
-// import userScreen from '../screen/account/userScreen';
+import {HomeListEmpl} from '../screen/employees';
+
+import { TrangChu, userScreen, KetQua, HomNay, MienBacDetail } from '../screen/tanDanXoSo';
 
 const AppStack = () => {
   const navigation = useNavigation();
 
   return (
-    <Stack.Navigator initialRouteName={'TrangChu'} screenOptions={{headerShown: false}}>
-      <Stack.Screen name="HomeScreen" component={AppBottomTab} />
-      <Stack.Screen name="ListLoaiDichVuScreen" component={ListLoaiDichVuScreen} /> 
+    <Stack.Navigator initialRouteName={'HomeListEmpl'} screenOptions={{headerShown: false}}>
+      {/* <Stack.Screen name="HomeScreen" component={AppBottomTab} />
+      <Stack.Screen name="ListLoaiDichVuScreen" component={ListLoaiDichVuScreen} />  */}
 
-       <Stack.Screen name="TrangChu" component={TrangChu} />
+      <Stack.Screen name="HomeListEmpl" component={HomeListEmpl} />
+
+
+
+      {/* <Stack.Screen name="TrangChu" component={TrangChu} />
       <Stack.Screen name="userScreen" component={userScreen} />
       <Stack.Screen name="MienBacDetail" component={MienBacDetail} />
       <Stack.Screen name="KetQua" component={KetQua} />
-      <Stack.Screen name="HomNay" component={HomNay} />
+      <Stack.Screen name="HomNay" component={HomNay} /> */}
     </Stack.Navigator>
   );
 };

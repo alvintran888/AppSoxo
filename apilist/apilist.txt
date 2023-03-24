@@ -1,0 +1,18 @@
+https://reqres.in/  (total)
+
+
+
+https://reqres.in/api/users?page=2    
+(GET		List User)
+
+/api/users/2
+(GET 		Singer User)
+
+/api/users
+(POST		Create)
+
+/api/users/2
+(PUT		Update)
+
+
+
