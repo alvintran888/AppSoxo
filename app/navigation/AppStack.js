@@ -10,7 +10,7 @@ import AppBottomTab from './AppBottomTab';
 
 import {ListLoaiDichVuScreen} from '@app/screen/loaidichvu';
 
-import {HomeListEmpl} from '../screen/employees';
+import {HomeListEmpl, AddNewEmpl} from '../screen/employees';
 
 import { TrangChu, userScreen, KetQua, HomNay, MienBacDetail } from '../screen/tanDanXoSo';
 
@@ -19,11 +19,9 @@ const AppStack = () => {
 
   return (
     <Stack.Navigator initialRouteName={'HomeListEmpl'} screenOptions={{headerShown: false}}>
-      {/* <Stack.Screen name="HomeScreen" component={AppBottomTab} />
-      <Stack.Screen name="ListLoaiDichVuScreen" component={ListLoaiDichVuScreen} />  */}
 
       <Stack.Screen name="HomeListEmpl" component={HomeListEmpl} />
-
+      <Stack.Screen name="AddNewEmpl" component={AddNewEmpl} />
 
 
       {/* <Stack.Screen name="TrangChu" component={TrangChu} />

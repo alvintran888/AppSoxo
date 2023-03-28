@@ -1,12 +1,15 @@
-import React, {useState, useEffect} from 'react';
-import {View, Text, StyleSheet, FlatList, TouchableOpacity, Image} from'react-native';
+import * as React from 'react';
+import {useState, useEffect} from 'react';
+import {View, Text, StyleSheet, FlatList, TouchableOpacity, Image, } from'react-native';
 import { Header } from '@app/components';
 import { useNavigation } from '@react-navigation/native';
+import FontAwesome from 'react-native-vector-icons/FontAwesome5Pro';
 import axios from 'axios';
 
 // https://reqres.in/
 const HomeListEmpl = () => {
-    const [maNv, setMaNv] = useState([])
+    const [maNv, setMaNv] = useState([]);
+    const navigation = useNavigation();
 
 
     // useEffect(() => {
@@ -28,7 +31,6 @@ const HomeListEmpl = () => {
             const res = await fetch('https://reqres.in/api/users?page=2');
             const json = await res.json();
             setMaNv(json.data)
-            setData(res.data)
             console.log(json.data)
         }
         fetchData(); 
@@ -58,17 +60,26 @@ const HomeListEmpl = () => {
         );
     }
 
-    return(
-        <View style={{flex:1}}>
-            <Header title={'Danh sách nhân viên'} backgroundColor={'#849FE3'} leftComponent={'False'}/>
+    return (
+      <View style={{flex: 1}}>
+        <Header
+          title={'Danh sách nhân viên'}
+          backgroundColor={'#849FE3'}
+          leftComponent={'flase'}
+          RightComponent={() => (
+            <TouchableOpacity
+              style={{marginRight: 10}}
+              onPress={() => {
+                navigation.navigate('AddNewEmpl');
+              }}>
+              <FontAwesome name={'plus'} color={'#FFF'} size={30} />
+            </TouchableOpacity>
+          )}
+        />
 
-            <FlatList  
-                data={maNv}
-                renderItem={renderNv}
-                keyExtractor={item => item.id}
-                />
-        </View>
-    )
+        <FlatList data={maNv} renderItem={renderNv} keyExtractor={item => item.id} />
+      </View>
+    );
 }
 export default HomeListEmpl;
 

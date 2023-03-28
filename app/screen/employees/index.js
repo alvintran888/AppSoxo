@@ -1,3 +1,3 @@
 import HomeListEmpl from './HomeListEmpl';
-
-export {HomeListEmpl};
+import AddNewEmpl from './AddNewEmpl';
+export {HomeListEmpl, AddNewEmpl};
