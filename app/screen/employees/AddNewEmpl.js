@@ -1,53 +1,42 @@
 import React, {useState, useEffect} from'react';
 import {View, Text, Image, TextInput, TouchableOpacity, Button, } from 'react-native';
 import { Header } from '@app/components';
+import axios from 'axios';
+import { useNavigation } from '@react-navigation/native';
+import { showMessage } from 'react-native-flash-message';
 
 
 const AddNewEmpl = () => {
-    const [firstName, setFirstname] = useState('Nghia');
-    const [lastName, setLastname] = useState('Tran');
-    const [email, setEmail] = useState('Chloe@gmail.com');
-    
+    const navigate = useNavigation()
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [gender, setGender] = useState('');
 
     const SaveEmpl = async () => {
-        const response = await fetch ('https://reqres.in/api/users?page=2', {
-            method: "POST",
-            header: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                firstName,
-                lastName,
-                email,
-            }),
+        var body = {
+            name: name,
+            email: email,
+            gender: gender,
+            status: 'inactive'
+        }
+        const res = axios.post('https://gorest.co.in/public/v2/users/', body, {
+            headers: {
+                'Authorization' : 'Bearer 9455730374cceb570fda91dbe2b9a859387e5da58a080eddb80bea281e59a4ba'
+            }
+        }).then((response) => {
+            if(response.status === 201){
+                showMessage({
+                    message: 'Thêm thành công',
+                    description: 'Thêm mới người dùng thành công',
+                    type: 'success',
+                  });
+                console.log(response.data)
+                navigate.goBack()
+            }
+            else {
+                console.log('Added failed !');
+            }
         })
-        if (response.ok) {
-            console.log("User added successfully");
-            console.log(response.SaveEmpl) 
-            
-          } else {
-            console.log("Error adding user");
-          }
-        //Tạo dữ liệu
-        // let dulieu = {first: firstName, last:lastName, email: email}
-
-        // fetch('https://reqres.in/api/users?page=2', {
-        //   method: 'POST',
-        //   headers: {
-        //     Accept: 'application/json',
-        //     'Content-Type': 'application/json',
-        //   },
-        //   body: JSON.stringify( dulieu )
-        // })
-
-        // .then ((res) => {
-        //         if(res.status ==201)
-        //         alert ("Add Successfull")
-        // })
-        // .catch ((ex) => {
-        //     console.log(ex);
-        // })
-        
     }
     
     return(
@@ -55,15 +44,9 @@ const AddNewEmpl = () => {
             <Header title={'New Employee'} backgroundColor={'#849FE3'} isStack={'True'}/>  
 
             <TextInput 
-            placeholder='First Name'
-            value={firstName}
-            onChangeText={setFirstname}
-            />
-
-            <TextInput 
-            placeholder='Last Name'
-            value={lastName}
-            onChangeText={setLastname}
+            placeholder='Name'
+            value={name}
+            onChangeText={setName}
             />
 
             <TextInput 
@@ -72,12 +55,12 @@ const AddNewEmpl = () => {
             onChangeText={setEmail}
             />
 
+            <TextInput 
+            placeholder='Gender'
+            value={gender}
+            onChangeText={setGender}
+            />
 
-            {/* <TextInput 
-            placeholder='First Name'
-            onChangeText={(txt) => {setFirstname(txt)}}
-            /> */}
-            
             <Button title="Save" onPress={SaveEmpl}/>
             
             
