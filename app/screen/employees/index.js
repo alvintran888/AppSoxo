@@ -1,4 +1,5 @@
 import HomeListEmpl from './HomeListEmpl';
 import AddNewEmpl from './AddNewEmpl';
 import Detail from './Detail';
-export {HomeListEmpl, AddNewEmpl, Detail};
+import LoginScreen from './LoginScreen';
+export {HomeListEmpl, AddNewEmpl, Detail, LoginScreen};
