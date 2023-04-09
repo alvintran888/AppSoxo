@@ -73,7 +73,7 @@ const HomeListEmpl = () => {
         <Header
           title={'Danh sách nhân viên'}
           backgroundColor={'#849FE3'}
-          leftComponent={'flase'}
+          isStack={'true'}
           RightComponent={() => (
             <TouchableOpacity
               style={{marginRight: 10}}

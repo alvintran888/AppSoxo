@@ -1,8 +1,10 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import {View, Text, TextInput, TouchableOpacity, Button} from 'react-native';
 
 
 const LoginScreen = ()=> {
+    const navigation = useNavigation();
     return(
         <View style={{flex:1, backgroundColor:'white'}}>
             <View style={{paddingTop:'50%', alignItems:'center'}}>
@@ -12,17 +14,27 @@ const LoginScreen = ()=> {
             </View>
 
             <View style={{height:50, marginTop:20, }}>
-                <TextInput style={{marginLeft:20, marginRight:20, backgroundColor:'#CFCFCF', borderRadius:5}} placeholder="Tên người dùng"></TextInput>
+                <TextInput style={{marginLeft:20, marginRight:20, backgroundColor:'#FAFAFA', borderRadius:5}} placeholder="     Tên người dùng"></TextInput>
             </View>
             <View style={{height:50, marginTop:10, }}>
-                <TextInput style={{marginLeft:20, marginRight:20,backgroundColor:'#CFCFCF', borderRadius:5}} placeholder="Mật khẩu"></TextInput>
+                <TextInput style={{marginLeft:20, marginRight:20,backgroundColor:'#FAFAFA', borderRadius:5}} placeholder="      Mật khẩu"></TextInput>
             </View>
 
             <TouchableOpacity style={{height:20, width:120, marginTop:10, marginLeft:270}}>
                 <Text style={{color:'#1F8AD2', fontSize:15, marginLeft:8, fontWeight:'500'}}>Quên mật khẩu?</Text>
             </TouchableOpacity>
-
             
+            <View style={{padding:20}}>
+            <TouchableOpacity 
+            onPress={() => {
+                navigation.navigate('HomeListEmpl')
+            }}
+            style={{ height:50, backgroundColor:'#A7C9F6', borderRadius:5, justifyContent:'center', alignItems:'center'}}>
+                <Text style={{fontSize:15, fontWeight:'800', color:'white'}}>
+                    Đăng nhập
+                </Text>
+            </TouchableOpacity>
+            </View>
             
         </View>
     )
