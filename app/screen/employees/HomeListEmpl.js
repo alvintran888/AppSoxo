@@ -22,7 +22,7 @@ const HomeListEmpl = () => {
                 'Authorization' : 'Bearer 9455730374cceb570fda91dbe2b9a859387e5da58a080eddb80bea281e59a4ba'
               }
             }).then((res) => {
-              setUserList(res.data); 
+              setUserList(res.data);
             })
           };
           fetchData();
@@ -41,7 +41,7 @@ const HomeListEmpl = () => {
 
     const renderNv = ({item}) => {
         return (
-          <TouchableOpacity onPress={() => navigation.navigate('Detail', {id: item.id})} style={{height: 120, marginTop: 10, flexDirection: 'row', padding: 10}}>
+          <TouchableOpacity onPress={() => navigation.navigate('Detail', { itemId: item.id})} style={{height: 120, marginTop: 10, flexDirection: 'row', padding: 10}}>
             <View style={{flex: 1}}>
               {/* image */}
 
@@ -85,7 +85,9 @@ const HomeListEmpl = () => {
           )}
         />
 
-        <FlatList data={userList} renderItem={renderNv} keyExtractor={item => item.id} />
+        <FlatList data={userList} 
+        renderItem={renderNv} 
+        keyExtractor={item => item.id} />
       </View>
     );
 }

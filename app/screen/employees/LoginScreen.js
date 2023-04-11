@@ -21,7 +21,7 @@ const LoginScreen = ()=> {
             </View>
 
             <TouchableOpacity style={{height:20, width:120, marginTop:10, marginLeft:270}}>
-                <Text style={{color:'#1F8AD2', fontSize:15, marginLeft:8, fontWeight:'500'}}>Quên mật khẩu?</Text>
+                <Text style={{color:'#007ACC', fontSize:15, marginLeft:8, fontWeight:'500'}}>Quên mật khẩu?</Text>
             </TouchableOpacity>
             
             <View style={{padding:20}}>
@@ -29,7 +29,7 @@ const LoginScreen = ()=> {
             onPress={() => {
                 navigation.navigate('HomeListEmpl')
             }}
-            style={{ height:50, backgroundColor:'#A7C9F6', borderRadius:5, justifyContent:'center', alignItems:'center'}}>
+            style={{ height:50, backgroundColor:'#007ACC', borderRadius:5, justifyContent:'center', alignItems:'center'}}>
                 <Text style={{fontSize:15, fontWeight:'800', color:'white'}}>
                     Đăng nhập
                 </Text>

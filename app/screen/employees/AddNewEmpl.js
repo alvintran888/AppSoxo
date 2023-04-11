@@ -42,24 +42,29 @@ const AddNewEmpl = () => {
     return(
         <View style={{flex:1}}>
             <Header title={'New Employee'} backgroundColor={'#849FE3'} isStack={'True'}/>  
-
-            <TextInput 
+        
+        <TextInput 
             placeholder='Name'
             value={name}
             onChangeText={setName}
+            style={{marginTop:20, }}
             />
 
             <TextInput 
             placeholder='Email'
             value={email}
             onChangeText={setEmail}
+            style={{marginTop:20, }}
             />
 
             <TextInput 
             placeholder='Gender'
             value={gender}
             onChangeText={setGender}
+            style={{marginTop:20,marginBottom:30}}
             />
+        
+            
 
             <Button title="Save" onPress={SaveEmpl}/>
             

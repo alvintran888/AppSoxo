@@ -1,13 +1,15 @@
 import { useNavigation } from "@react-navigation/native";
-import React, {useState, useEffect, useParams} from "react";
+import React, {useState, useEffect, useParams, useRoute} from "react";
 import {View, Text, Image} from 'react-native';
 import { Header } from '@app/components';
 import axios from 'axios';
 
 
-const Detail = (id, name, email, image) => {
+const Detail = ( route) => {
     const navigation = useNavigation()
-    const [detailuser, setDetailuser] = useState('');
+    // const { itemId } = route.params;
+    // const itemId = navigation.getParam('itemId')
+
     // const { id } = useParams();
     
     // useEffect(() => {
@@ -24,21 +26,22 @@ const Detail = (id, name, email, image) => {
     //     };
     //     fetchData();
     //   }, [])
-    const userUrl = 'https://gorest.co.in/public/v2/users/';
-        const url = `${userUrl}${id}`;
-        const data = {
-          name,
-          email,
-          image
-        };
 
-        axios.post(url, data)
-    .then(response => {
-      console.log('Data submitted successfully');
-    })
-    .catch(error => {
-      console.log('Error submitting data: ', error);
-    });
+    // const userUrl = 'https://gorest.co.in/public/v2/users/';
+    //     const url = `${userUrl}${id}`;
+    //     const data = {
+    //       name,
+    //       email,
+    //       image
+    //     };
+
+    //     axios.post(url, data)
+    // .then(response => {
+    //   console.log('Data submitted successfully');
+    // })
+    // .catch(error => {
+    //   console.log('Error submitting data: ', error);
+    // });
     
     return(
         <View style={{flex:1}}>
@@ -53,7 +56,7 @@ const Detail = (id, name, email, image) => {
         </View>
 
         <View style={{flex:3, backgroundColor:'#CFC'}}>
-            <Text></Text>
+            <Text> Employees ID: </Text>
         </View>
         </View>
         
