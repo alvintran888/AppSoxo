@@ -41,7 +41,7 @@ const HomeListEmpl = () => {
 
     const renderNv = ({item}) => {
         return (
-          <TouchableOpacity onPress={() => navigation.navigate('Detail', { itemId: item.id})} style={{height: 120, marginTop: 10, flexDirection: 'row', padding: 10}}>
+          <TouchableOpacity onPress={() => navigation.navigate('Detail', { itemId: item.id})} style={{paddingVertical:10, marginTop: 10, flexDirection: 'row', padding: 10}}>
             <View style={{flex: 1}}>
               {/* image */}
 

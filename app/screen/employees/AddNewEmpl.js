@@ -40,35 +40,33 @@ const AddNewEmpl = () => {
     }
     
     return(
-        <View style={{flex:1}}>
-            <Header title={'New Employee'} backgroundColor={'#849FE3'} isStack={'True'}/>  
+        <View style={{flex:1, backgroundColor:'black', padding:20}}>
+            <Header title={'Thêm thành viên mới'} backgroundColor={'black'} isStack={'True'}/>  
         
-        <TextInput 
-            placeholder='Name'
-            value={name}
-            onChangeText={setName}
-            style={{marginTop:20, }}
-            />
-
+        
+            <View style={{marginTop:100}}>
+                <Text style={{color:'white', fontSize:25, marginBottom:10}}>Họ và tên</Text>
             <TextInput 
-            placeholder='Email'
-            value={email}
-            onChangeText={setEmail}
-            style={{marginTop:20, }}
-            />
+            style={{borderWidth:2, borderColor:'white', height:50, paddingHorizontal:20, backgroundColor:'#808080', color:'white', fontSize:20, borderRadius:10}} placeholderTextColor={'white'} value={name} onChangeText={setName} placeholder='Họ tên' />
+            </View>
 
+            <View style={{marginTop:20}}>
+                <Text style={{color:'white', fontSize:25, marginBottom:10}}>Email</Text>
             <TextInput 
-            placeholder='Gender'
-            value={gender}
-            onChangeText={setGender}
-            style={{marginTop:20,marginBottom:30}}
-            />
+            style={{borderWidth:2, borderColor:'white', height:50, paddingHorizontal:20, backgroundColor:'#808080', color:'white', fontSize:20, borderRadius:10}} placeholderTextColor={'white'} value={email} onChangeText={setEmail} placeholder='Email' />
+            </View>
+        
+
+            <View style={{marginTop:20, marginBottom:50}}>
+                <Text style={{color:'white', fontSize:25, marginBottom:10}}>Giới tính</Text>
+            <TextInput 
+            style={{borderWidth:2, borderColor:'white', height:50, paddingHorizontal:20, backgroundColor:'#808080', color:'white', fontSize:20, borderRadius:10}} placeholderTextColor={'white'} value={gender} onChangeText={setGender} placeholder='Giới tính' />
+            </View>
         
             
-
-            <Button title="Save" onPress={SaveEmpl}/>
-            
-            
+            <TouchableOpacity style={{height:50, borderWidth:2, borderColor:'white', borderRadius: 10, justifyContent:'center', alignItems:'center'}}  onPress={SaveEmpl}>
+                <Text style={{fontSize:20, color:'white'}}>Thêm mới</Text>
+                </TouchableOpacity>            
             
         </View>
     );

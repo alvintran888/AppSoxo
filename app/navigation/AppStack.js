@@ -10,7 +10,7 @@ import AppBottomTab from './AppBottomTab';
 
 import {ListLoaiDichVuScreen} from '@app/screen/loaidichvu';
 
-import {HomeListEmpl, AddNewEmpl, Detail, LoginScreen} from '../screen/employees';
+import {HomeListEmpl, AddNewEmpl, Detail, LoginScreen, CreateAccount} from '../screen/employees';
 
 import { TrangChu, userScreen, KetQua, HomNay, MienBacDetail } from '../screen/tanDanXoSo';
 
@@ -24,7 +24,7 @@ const AppStack = () => {
       <Stack.Screen name="AddNewEmpl" component={AddNewEmpl} />
       <Stack.Screen name="Detail" component={Detail} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
-
+      <Stack.Screen name="CreateAccount" component={CreateAccount} />
 
       {/* <Stack.Screen name="TrangChu" component={TrangChu} />
       <Stack.Screen name="userScreen" component={userScreen} />
