@@ -5,9 +5,10 @@ import { Header } from '@app/components';
 import { useRoute } from '@react-navigation/native';
 import axios from 'axios';
 
-
+const navigation = useNavigation()
 const Detail = () => {
     const [detailEmployee, setDetailEmployee] = useState({})
+    const [editedEmployee, setEditedEmployee] = useState({})
     const route = useRoute()
 
     const { itemId } = route.params;
@@ -33,6 +34,16 @@ const Detail = () => {
         fetchData();
       }, [])
 
+    
+    const Saveedit = () => {
+        axios.put(`https://gorest.co.in/public/v2/users/${itemId}`, editedEmployee)
+        .then(response => {
+          console.log(response.data);
+          // navigate back to previous screen
+          navigation.goBack();
+        })
+        .catch(error => console.error(error));
+    };
     // const userUrl = 'https://gorest.co.in/public/v2/users/';
     //     const url = `${userUrl}${id}`;
     //     const data = {
@@ -72,7 +83,7 @@ const Detail = () => {
             </View>
 
             <View style={{marginTop:5,}}>
-                <TextInput style={{backgroundColor:'#DADADA', borderRadius:5, color:'black'}} placeholderTextColor={'#808080'} placeholder="name">{detailEmployee.name}</TextInput>
+                <TextInput style={{backgroundColor:'#DADADA', borderRadius:5, color:'black'}} placeholderTextColor={'#808080'} placeholder="name"  onChangeText={text => setEditedEmployee({...editedEmployee, name: text})} >{detailEmployee.name || editedEmployee.name}</TextInput>
             </View>
 
             <View style={{height:30, marginTop:10}}>
@@ -80,7 +91,7 @@ const Detail = () => {
             </View>
 
             <View style={{marginTop:5,}}>
-                <TextInput style={{backgroundColor:'#DADADA', borderRadius:5, color:'black'}} placeholderTextColor={'#808080'} placeholder="name">{detailEmployee.email}</TextInput>
+                <TextInput style={{backgroundColor:'#DADADA', borderRadius:5, color:'black'}} placeholderTextColor={'#808080'} placeholder="name" onChangeText={text => setEditedEmployee({...editedEmployee, email: text})} >{detailEmployee.email || editedEmployee.email}</TextInput>
             </View>
             
             <View style={{height:30, marginTop:10}}>
@@ -88,10 +99,12 @@ const Detail = () => {
             </View>
 
             <View style={{marginTop:5,}}>
-                <TextInput style={{backgroundColor:'#DADADA', borderRadius:5, color:'black'}} placeholderTextColor={'#808080'} placeholder="name">{detailEmployee.gender}</TextInput>
+                <TextInput style={{backgroundColor:'#DADADA', borderRadius:5, color:'black'}} placeholderTextColor={'#808080'} placeholder="name" onChangeText={text => setEditedEmployee({...editedEmployee, gender: text})} >{detailEmployee.gender || editedEmployee.email}</TextInput>
             </View>
 
-            <TouchableOpacity style={{height:50, backgroundColor:'#808080', marginTop:20, borderRadius:8, justifyContent:'center', alignItems:'center'}}>
+            <TouchableOpacity style={{height:50, backgroundColor:'#808080', marginTop:20, borderRadius:8, justifyContent:'center', alignItems:'center'}}
+            onPress={Saveedit}
+            >
                 <Text style={{fontSize:25, color:'white', fontWeight:'bold'}}>Cập nhật</Text>
             </TouchableOpacity>
         </View>
